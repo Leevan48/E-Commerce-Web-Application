@@ -1,0 +1,24 @@
+
+.inner_block {
+            position: relative;
+            width: 100%;
+            border: solid 1px black;
+            padding: 50px;
+            background-color: ghostwhite;
+            margin: 30px 60px 40px 20px;
+            justify-content: right;
+            margin: 0 1.6%;
+        }
+
+.bg-gray {
+            background: #F5F5F5;
+        }
+
+.lightcyan {
+    background: #e0ffff;
+}
+
+body {
+
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}

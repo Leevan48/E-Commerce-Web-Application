@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{%  load static %}
+
+{% block content %}
+<!-- FOR LOOP -->
+    <div class = "container">
+    <h1>{{ category.name }}</h1>
+    </div>
+    <div class = "container">
+        <div class="row">
+
+        {% for item in products %}
+
+
+            <div class="card col-sm-6 col-md-4 col-12">
+                <img class="card-img-top" src="/{{ item.image }}" alt="Card image cap">
+                <div class="card-body">
+                    <a  href="/product/{{ item.slug }}">{{ item.name }}</a>
+                    <p class="card-text">{{ item.description}}</p>
+                </div>
+                <div class="card-footer">
+                    <form>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit "> Add To Cart</button>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit ">Delete</button>
+                        <p> ${{ item.price }}</p>
+                    </form>
+                </div>
+            </div>
+
+        {% endfor %}
+        </div>
+</div>
+{% endblock %}

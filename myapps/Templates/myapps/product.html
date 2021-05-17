@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h1 style="align-content: center"> {{ product.name }}</h1>
+
+    <img src="/{{ product.image }}">
+
+    <p> {{ product.description }}</p>
+
+    <p>Price: {{ product.price }}</p>
+
+{% endblock %}
